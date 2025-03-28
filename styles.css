@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* تخصيص لون التمرير */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a202c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e53e3e;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c53030;
+}
+
+/* تأثيرات للبطاقات */
+.game-card {
+    transition: all 0.3s ease;
+}
+
+.game-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* تنسيقات للهواتف */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+    
+    .mobile-menu.active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #111;
+        z-index: 1000;
+        padding: 1rem;
+    }
+}
